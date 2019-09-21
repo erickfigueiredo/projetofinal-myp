@@ -1,0 +1,329 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <title>MyP</title>
+            <link rel="icon" type="imagem/png" href="imagens/icone/ic_myp.png" />
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+            <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+            
+            <link rel="stylesheet" href="vendor/bootstrap/css/style.css">
+            
+            <style>
+                h1::after{
+                    content: '|';
+                    margin-left: 5px;
+                    opacity: 1;
+                    animation: pisca .6s infinite;
+                }
+                @keyframes  pisca{
+                    0%,100%{
+                        opacity:1;
+                    }50%{
+                        opacity:0;
+                    }
+                }
+                .header-site{
+                    background-image:url(imagens/banner/workhome.jpg);
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-attachment: fixed;
+                    height: 100vh;
+                    width: 100%;
+                    color: #ffffff;
+                    padding-top: 200px;
+                }
+                  
+            </style>
+        </head>
+        <body id="page-top">
+            <nav class="navbar navbar-expand-lg navbar-dark mypcolor">
+                <div class="container">
+                    <a class="navbar-brand mb-0" href="https://play.google.com/store/apps" target="_blank"><img src="imagens/icone/ic_myp.png" alt="MyP Home" title="MyP Home" style="width:35px; height:35px;" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSite">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSite">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navDrop">Redes</a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                                    <a class="dropdown-item" href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                                    <a class="dropdown-item" href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.php">Administração</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-site">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center my-5">
+                            <h1 class="display-3" id="bv">Bem-vindo, futuro MyPer ;-)</h1>
+                            <script>
+                                window.onload = initPage;
+                                function initPage(){
+                                    function typeWriter(elemento){
+                                        const textoArray = elemento.innerHTML.split('');
+                                        elemento.innerHTML = '';
+                                        textoArray.forEach((letra,i) => {
+                                                setTimeout(() => elemento.innerHTML+=letra,100*i)
+                                        });
+                                    }
+                                    const titulo = document.querySelector('#bv');
+                                    typeWriter(titulo);
+                                }
+                            </script>
+                            <p class="">Faça parte da família MyP, baixe o app e alavanque sua carreira profissional!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselSite" class="carousel slide" data-ride="carousel" align="center" style="background-color: #0F0F0F">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselSite" data-slide-to="1"></li>
+                    <li data-target="#carouselSite" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="width=100%">
+                        <img src="imagens/banner/ex1.jpg" class="img-fluid d-block">
+                        <div class="carousel-caption d-none d-md-block">
+                            <p style="font-family:ubuntu; font-size:40px;">MyP</p>
+                            <h3>O céu é o limite</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="width=100%">
+                        <img src="imagens/banner/ex2.jpg" class="img-fluid socd-block">
+                         <div class="carousel-caption d-none d-md-block">
+                             <h3>Alcance seu sucesso profissional</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="width=100%">
+                        <img src="imagens/banner/ex3.jpg" class="img-fluid d-block">
+                         <div class="carousel-caption d-none d-md-block">
+                             <h3>MyProfissional, você no controle!</h3>
+                        </div>
+                    </div>
+                </div>
+                    <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="sr-only">Anterior</span>
+                     </a>
+                    <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="sr-only">Avançar</span>
+                    </a>
+            </div>
+            <div class="container">
+                <div class="row mb-5 my-5">
+                    <div class="col-md-4 mb-3">
+                        <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link" href="#item1">Carta ao usuário</a>
+                                <a class="nav-link my-2" href="#item2">O aplicativo</a>
+                                <nav class="nav nav-pills flex-column">
+                                    <a class="nav-link ml-3" href="#item2-1">O que fazemos</a>
+                                    <a class="nav-link ml-3" href="#item2-2">Segurança</a>
+                                </nav>
+                                <a class="nav-link my-2" href="#item3">Nossa política</a>
+                            </nav>
+                        </nav>
+                    </div>
+                    <div class="col-md-8">
+                        <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+                            <h4>Carta ao usuário</h4>
+                            <p></p>
+                            <h4>O aplicativo</h4>
+                            <p></p>
+                            <h5>O que fazemos</h5>
+                            <p></p>
+                            <h5>Segurança</h5>
+                            <p>Nossa equipe está sempre preocupada em prestar o melhor serviço tanto para o cliente, quanto para o profissional</p>
+                            <h4>Nossa política</h4>
+                            <p></p>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                        <div class="row justify-content-sm-center" >
+                            <div class="col-sm-6 col-md-4">
+                                <div class="card mb-5">
+                                    <img class="card-img-top" title="Erick Figueiredo" alt="Erick Figueiredo" src="imagens/fundadores/erick.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title cortextmyp">Erick Figueiredo</h4>
+                                        <h5 class="card-subtitle mb-2 text-muted">Co-fundador</h5>
+                                        <p class="card-text">Brasileiro, mineiro, 17 anos e aluno do IFMG - Campus Ouro Branco</p>
+                                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalerick">Mais informações</a>
+                                        <a href="https://www.facebook.com/ericklimafigueiredo" target="_blank" class="card-link">Perfil</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="card mb-5">
+                                    <img class="card-img-top" title="MyP, seu app de serviços" alt="MyP" src="imagens/icone/myp_negativo.png">
+                                    <div class="card-body">
+                                        <h4 class="card-title cortextmyp">Cresça rápido!</h4>
+                                        <h5 class="card-subtitle mb-2 text-muted">Seja nosso parceiro ou adquira o premium!</h5>
+                                        <p class="card-text">Empresas e profissionais independentes, o MyP tem planos especiais para você!</p>
+                                        <a href="#" class="card-link" data-toggle="modal" data-target="#siteModalmyp">Mais informações</a>
+                                    </div>
+                                </div>
+                            </div>      
+                            <div class="col-sm-6 col-md-4">
+                                <div class="card mb-5" >
+                                    <img class="card-img-top" title="Vinícius Neves" alt="Vinícius Neves" src="imagens/fundadores/vinicius.jpg">
+                                    <div class="card-body">
+                                        <h4 class="card-title cortextmyp">Vinícius Neves</h4>
+                                        <h5 class="card-subtitle mb-2 text-muted">Co-fundador</h5>
+                                        <p class="card-text">Brasileiro, mineiro, 17 anos e aluno do IFMG - Campus Ouro Branco</p>
+                                        <a href="#" class="card-link"  data-toggle="modal" data-target="#siteModalvinicius">Mais informações</a>
+                                        <a href="https://www.facebook.com/vinicius.assisneves?fb_dtsg_ag=Adxol9-bOLu5Bkx1spUJouQvb-iJImtCy3a3uBFIstcSDQ%3AAdzWB8U1XAjxbLwR7Y6vtJWTicA7zEexGhvon6lxryUomg" target="_blank" class="card-link">Perfil</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h2 class="display-4">Esperamos por você</h2>
+                                <hr>
+                                <div>
+                                    <img src="imagens/banner/negocios.jpg" alt="O MyP ajuda você!" title="O MyP ajuda você!" style="width:100%; height: 60%;">
+                                </div>
+                                <hr>
+                                <p>O MyP é uma iniciativa 100% brasileira que visa alcançar outros países para alavancar a carreira de profissionais independentes e promover o crescimento de empresas.</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div><hr  width="200px"><p align="center">Copyright © MyP 2018</p></div>
+            
+            <!--Modal-->
+            <div class="modal fade" id="siteModalerick" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Olá, sou o Erick!</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="siteModalmyp" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Olá, profissional!</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="siteModalvinicius" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="exampleModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Olá, sou o Vinícius!</h5>
+                            <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <p></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+	    <!-- Bootstrap core JavaScript-->
+	    <script src="vendor/jquery/jquery.min.js"></script>
+	    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	    <!-- Core plugin JavaScript-->
+	    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+	    <!-- Custom scripts for all pages-->
+	    <script src="js/sb-admin.min.js"></script>
+	    <script>
+	          $( document ).ready(function() {
+                scaleVideoContainer();
+            
+                initBannerVideoSize('.video-container .poster img');
+                initBannerVideoSize('.video-container .filter');
+                initBannerVideoSize('.video-container video');
+            
+                $(window).on('resize', function() {
+                  scaleVideoContainer();
+                  scaleBannerVideoSize('.video-container .poster img');
+                  scaleBannerVideoSize('.video-container .filter');
+                  scaleBannerVideoSize('.video-container video');
+                });
+              });
+            
+              function scaleVideoContainer() {
+                var height = $(window).height() + 5;
+                var unitHeight = parseInt(height) + 'px';
+                $('.homepage-hero-module').css('height',unitHeight);
+              }
+            
+              function initBannerVideoSize(element){
+                $(element).each(function(){
+                  $(this).data('height', $(this).height());
+                  $(this).data('width', $(this).width());
+                });
+            
+                scaleBannerVideoSize(element);
+              }
+            
+              function scaleBannerVideoSize(element) {
+            
+                var windowWidth = $(window).width(),
+                windowHeight = $(window).height() + 5,
+                videoWidth,
+                videoHeight;
+            
+                // console.log(windowHeight);
+            
+                $(element).each(function(){
+                  var videoAspectRatio = $(this).data('height')/$(this).data('width');
+            
+                  $(this).width(windowWidth);
+            
+                  if(windowWidth < 1000){
+                      videoHeight = windowHeight;
+                      videoWidth = videoHeight / videoAspectRatio;
+                      $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+            
+                      $(this).width(videoWidth).height(videoHeight);
+                  }
+            
+                  $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+            
+                });
+              }
+	    </script>
+        </body>
+    </html>

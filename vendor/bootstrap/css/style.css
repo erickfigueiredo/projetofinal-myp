@@ -1,0 +1,46 @@
+<style rel="stylesheet" type="text/css">
+    .mudafonte{
+        font-family: moderna;
+        font-size: 25px;
+    }
+    .mypcolor{
+        background-image: linear-gradient(to bottom, #2B2A2A,#0F0F0F);
+    }
+    .btngeral{
+        background-image: linear-gradient(to top,25%, #CECECE,75%,white); 
+        color: #16CCC8;
+    }
+
+    .cortextmyp{
+        background: -webkit-linear-gradient( to right, #28F19D,#02A1F9);
+        background: linear-gradient( to right, #28F19D,#02A1F9);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+    
+    .scrollspySite{
+        position: relative;
+        overflow: auto;
+        height: 400px;
+    }
+
+
+    @font-face {
+        font-family: 'Ubuntu', sans-serif;
+        src: url(fonte/Ubuntu-Bold.ttf)
+    }
+    
+    .header-site{
+        background-image:url(imagens/fundadores/erickevinicius.JPG);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        color: #ffffff;
+        padding-top: 300px;
+        padding-bottom: 300px;
+    }
+    
+    
+
+</style>
